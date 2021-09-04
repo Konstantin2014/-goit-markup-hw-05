@@ -403,7 +403,8 @@ a{
    fill: var(--icon-color); 
    
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover, 
 .social-link:focus{
@@ -626,13 +627,13 @@ a{
 .link-portfilio{
    display: block;
 } 
-.item-portfolio:hover .top-text,
-.item-portfolio:focus .top-text{
+.link-portfilio:hover .top-text,
+.link-portfilio:focus .top-text{
    transform: translateY(0%);  
    
 }
-.item-portfolio:hover,
-.item-portfolio:focus{
+.link-portfilio:hover,
+.link-portfilio:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio{
@@ -657,7 +658,8 @@ a{
    width: 100vw;
    top: 0;
    background: rgba(0, 0, 0, 0.2);
-   transition: opacity 250ms, visibility 250ms;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+	visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
    padding: 40px;
